@@ -1,0 +1,9 @@
+{
+    "builders": {
+      "json-info": {
+        "implementation": "./dist/json-info",
+        "schema": "./dist/schema.json",
+        "description": "Create json info file"
+      }
+    }
+  }

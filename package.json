@@ -1,0 +1,19 @@
+{
+  "name": "builder",
+  "version": "1.0.0",
+  "description": "",
+  "builders": "builders.json",
+  "scripts": {
+    "build": "tsc && pnpm run postbuild",
+    "postbuild": "copyfiles --up 1 ./src/**/*.json ./dist"
+  },
+  "author": "Yann-Thomas Le Moigne",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular-devkit/architect": "^0.1703.2",
+    "@angular-devkit/core": "^17.3.2",
+    "@types/node": "^20.11.30",
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.4.3"
+  }
+}
